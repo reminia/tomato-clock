@@ -5,4 +5,8 @@ function dayOf(date) {
     return [year, month, day].join("-")
 }
 
-module.exports.dayOf=dayOf
+function format(mins, secs) {
+    return mins + " : " + secs;
+}
+module.exports.dayOf = dayOf;
+module.exports.format = format;

@@ -19,6 +19,7 @@
     "electron": "^3.0.7"
   },
   "dependencies": {
+    "easytimer.js": "^3.0.0",
     "electron-packager": "^13.0.1",
     "jquery": "^3.3.1",
     "pouchdb-browser": "^7.0.0",
