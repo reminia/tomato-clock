@@ -10,7 +10,9 @@ let dbService = new DBService();
 dbService
     .list(util.dayOf(new Date()))
     .then(docs => {
-        docs.forEach(doc => $tomatoes.append("<p class='tomato'>" + doc.desc + "</p>"));
+        docs.forEach(doc => $tomatoes.append(
+            '<img src="tomato.ico" class="tomato"></img>'
+        ));
         $count.text(docs.length);
     });
 

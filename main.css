@@ -1,0 +1,43 @@
+body {
+    background-color: #272857;
+    /* background-color: #4039DA; */
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+#control {
+    text-align: center;
+}
+
+#clock {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#buttons {
+    margin-top: 1em;
+}
+
+#start,
+#pause {
+    background: #EC9D83;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.tomato {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#tomatoes {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#summary {
+    text-align: center;
+    margin-top: 2em;
+    color: #FFBD90;
+}

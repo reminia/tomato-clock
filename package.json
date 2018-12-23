@@ -1,7 +1,7 @@
 {
   "name": "simple-tomato-clock",
   "product-name": "TomatoClock",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A simple tomato clock for self",
   "main": "main.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "electron": "^3.0.7"
   },
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "easytimer.js": "^3.0.0",
     "electron-packager": "^13.0.1",
     "jquery": "^3.3.1",
