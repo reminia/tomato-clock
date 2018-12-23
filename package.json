@@ -1,7 +1,7 @@
 {
   "name": "simple-tomato-clock",
   "product-name": "TomatoClock",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "A simple tomato clock for self",
   "main": "main.js",
   "scripts": {
