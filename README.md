@@ -2,4 +2,4 @@
 
 **A tomato clock for self usage.**
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+UI design is based on [dribble]( https://dribbble.com/shots/3905149-Timer-App-Prototype).

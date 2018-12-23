@@ -1,16 +1,16 @@
-const DBService = require('./db.js')
-const util = require('./util.js')
-const TimerService = require('./timer.js')
+let DBService = require('./db.js')
+let util = require('./util.js')
+let TimerService = require('./timer.js')
 
 let $ = require("jquery");
-const tomatoes = $('#tomatoes');
+let $tomatoes = $('#tomatoes');
 let $count = $("#summary .total");
 
 let dbService = new DBService();
 dbService
     .list(util.dayOf(new Date()))
     .then(docs => {
-        docs.forEach(doc => tomatoes.append("<p class='tomato'>" + doc.desc + "</p>"));
+        docs.forEach(doc => $tomatoes.append("<p class='tomato'>" + doc.desc + "</p>"));
         $count.text(docs.length);
     });
 
@@ -34,8 +34,8 @@ $pause.click(function () {
 
 function endCallback(timer) {
     music.pause();
-    tomatoes.append("<p class='tomato'>A tomato</p>");
-    $count.text(tomatoes.find('p').length);
+    $tomatoes.append("<p class='tomato'>A tomato</p>");
+    $count.text($tomatoes.find('p').length);
     const date = new Date();
     const tomato = {
         _id: date,//tomato add time
