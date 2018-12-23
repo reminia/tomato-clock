@@ -12,6 +12,7 @@ body {
 #clock {
     font-size: 3em;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #buttons {
