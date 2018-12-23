@@ -12,8 +12,8 @@ npm start
 ## PACKAGE
 
 ```sh
-npm package  # for mac
-npm pack-win # for win64
+npm run package  # for mac
+npm run pack-win # for win64
 ```
 
 ## SHOWCASE
