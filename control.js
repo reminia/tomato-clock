@@ -6,13 +6,12 @@ let $ = require("jquery");
 let $tomatoes = $('#tomatoes');
 let $count = $("#summary .total");
 
+let tomatoImg = '<img src="tomato.ico" class="tomato"></img>'
 let dbService = new DBService();
 dbService
     .list(util.dayOf(new Date()))
     .then(docs => {
-        docs.forEach(doc => $tomatoes.append(
-            '<img src="tomato.ico" class="tomato"></img>'
-        ));
+        docs.forEach(doc => $tomatoes.append(tomatoImg));
         $count.text(docs.length);
     });
 
@@ -36,8 +35,8 @@ $pause.click(function () {
 
 function endCallback(timer) {
     music.pause();
-    $tomatoes.append("<p class='tomato'>A tomato</p>");
-    $count.text($tomatoes.find('p').length);
+    $tomatoes.append(tomatoImg);
+    $count.text($tomatoes.find('img').length);
     const date = new Date();
     const tomato = {
         _id: date,//tomato add time

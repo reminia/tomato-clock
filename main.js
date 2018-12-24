@@ -8,6 +8,9 @@ const url = require('url')
 let mainWindow
 let tray
 
+// Don't show the app in the dock
+app.dock.hide()
+
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
@@ -20,7 +23,8 @@ function createWindow() {
       // Prevents renderer process code from not running when window is
       // hidden
       backgroundThrottling: false
-    }
+    },
+    icon: path.join(__dirname, 'tomato.png')
   })
 
   // and load the index.html of the app.
