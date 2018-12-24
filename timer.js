@@ -28,6 +28,8 @@ class TimerService {
             });
             this.clock.addEventListener("targetAchieved", timer => {
                 this.endCallback(timer);
+                this.paused = false;
+                this.stopped = true;
             });
         }
     }
