@@ -34,7 +34,8 @@ body {
 
 #tomatoes {
     text-align: center;
-    margin-top: 1em;
+    width: 50%;
+    margin: 1em auto;
 }
 
 #summary {

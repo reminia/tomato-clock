@@ -15,6 +15,7 @@ class TimerService {
         if (this.paused) {
             this.clock.start();
         } else {
+            this.$dom.text(util.format(this.minutes, "00"));
             this.clock.start({
                 startValues: { minutes: this.minutes, seconds: 0 },
                 targetValues: { minutes: 0, seconds: 0 },
